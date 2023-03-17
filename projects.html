@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My CV Website - Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <button id="theme-toggle">Toggle Night Mode</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section id="projects">
+      <h2>A sneak peek of my projects</h2>
+
+      <div class="project">
+        <h3>Sub-language of Java Compiler</h3>
+        <!-- <img src="sneakpeek1.png" width="400" height="500" alt="No images available because of policy"> -->
+        <p> Homemade compiler for a homemade language called Deca which is a sub language of Java.
+            The compiler is coded in Java and the assembly language is that of a homemade abstract machine
+            called Ima. Use of ANTLR to do the lexical and syntactic analysis and to help build
+            the abstract tree. <br>
+            It was a group project, I focused on the tree decoration, helped on the assembly language generation
+            and I conducted the extension part which was to implement a linker to be able to generate and link 
+            object files.
+        </p>
+        <a href="">No sources available because of university policy for this project</a>
+      </div>
+
+      <div class="project">
+        <h3>Graphic interface library</h3>
+        <div class="image-container">
+            <img class="project-image" src="img/minesweeper.gif"  alt="Project Image">
+            <img class="project-image" src="img/widgets.gif" height="300" alt="Project Image">
+        </div>
+        <p>A graphical user interface library coded in C that allows a user to create their own graphical window using different widgets such as frames, buttons, toplevel, etc. Each widget can be bound to a callback function that can perform various types of applications. This library was developed in a modular way to allow for the addition of other widgets.</p>
+        <a href="https://github.com/adrienLLR/Interface-Graphique">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Processor Conception</h3>
+        <div class="image-container">
+            <img class="firefighter" src="img/processor-project.png" alt="Project Image">
+            <img class="firefighter" src="img/schema-processor.png" alt="Project Image">
+        </div>
+        <p> Conception of a simplified version of the Risc-V processor in VHDL with Vivado for testing. <br>
+            Making of the decoding of the instructions, interruptions handling and jumping handling while
+            most of the operative part was already done.
+        </p>
+        <a href="">View on GitHub ( Upcoming )</a>
+      </div>
+
+      <div class="project">
+        <h3>FireFighter Robots - Simulation</h3>
+        <div class="image-container">
+            <img class="firefighter" src="img/firefighter.gif" alt="Project Image">
+        </div>
+        <p> A program coded in Java that simulates different fire extinction strategies to see which one is the best. The simulations are performed on different maps and various terrains.</p>
+        <a href="https://github.com/adrienLLR/Robot-Pompier">View on GitHub</a>
+      </div>
+      
+    </section>
+    
+    <script src="script.js"></script>
+  </body>
+</html>

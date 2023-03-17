@@ -1,0 +1,277 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Set the font */
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    color: #24292e;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  
+  /* Header styles */
+  header {
+    background-color: #24292e;
+    padding: 16px 32px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+  }
+  
+  header h1 {
+    display: inline;
+    font-size: 1.5em;
+    color: #ffffff;
+  }
+  
+  header nav {
+    display: inline-block;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+  }
+  
+  header nav li {
+    display: inline;
+    padding-left: 16px;
+  }
+  
+  header nav a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Section styles */
+  section {
+    margin: 32px auto; 
+    padding: 16px 32px; 
+    max-width: 1200px;
+  }
+  
+  /* About Me section styles */
+
+  /* About Me card styles */
+.about-me-card {
+    background-color: #f6f8fa;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    margin-top: 16px;
+    width: 100%;
+    max-width: 800px;
+  }
+
+  #about-me {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  #about-me img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 16px;
+  }
+  
+  #about-me h2, #about-me h3 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+  
+  #about-me p {
+    width: 100%;
+  }
+  
+  #about-me ul {
+    list-style-type: none;
+    margin-bottom: 16px;
+    padding: 0;
+  }
+  
+  #about-me ul li {
+    display: inline-block;
+    margin-right: 8px;
+  }
+  
+  .skill {
+    background-color: #0366d6;
+    border-radius: 12px;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-bottom: 4px;
+    padding: 4px 8px;
+  }
+  
+  
+  /* Projects section styles */
+  #projects {
+    margin-top: 0;
+  }
+  
+  #projects h2 {
+    font-size: 1.5em;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    background-color: #f6f8fa;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    padding: 6px;
+    margin-bottom: 16px;
+    margin-top: 32px;
+    transition: all 0.3s ease;
+  }
+  
+  .project:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transform: translateY(-5px); 
+  }
+
+  .project * {
+    text-align: center; /* Center the text of all child elements */
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .project img {
+    max-width: 100%;
+    width: 400px; /* Set a specific width for the images */
+    height: auto;
+    margin-bottom: 8px;
+
+  }
+
+  
+  .project-image:last-child {
+    margin-right: 0;
+  }
+
+  
+  
+  
+  .project h3 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+  
+  .project a {
+    color: #0366d6;
+    text-decoration: none;
+  }
+  
+  .project a:hover {
+    text-decoration: underline;
+  }
+
+
+.slide-in {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .slide-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  
+
+  /* Add these styles for the button */
+#theme-toggle {
+    background-color: transparent;
+    border: 1px solid #d1d5da;
+    border-radius: 6px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 16px;
+    padding: 4px 8px;
+  }
+  
+  #theme-toggle:hover {
+    background-color: #30363d;
+  }
+
+  /* Night Mode styles */
+body.night-mode {
+    background-color: #0d1117;
+    color: #c9d1d9;
+  }
+  
+  header.night-mode {
+    background-color: #161b22;
+  }
+  
+  header.night-mode #theme-toggle {
+    border-color: #30363d;
+  }
+  
+  .project.night-mode {
+    background-color: #161b22;
+    border-color: #30363d;
+  }
+
+  body.night-mode .project {
+    background-color: #161b22;
+    border-color: #30363d;
+    color: #c9d1d9;
+  }
+  
+body.night-mode .project a {
+  color: #58a6ff;
+}
+
+body.night-mode .project a:hover {
+  color: #c9d1d9;
+  text-decoration: underline;
+}
+
+/* Night mode styles for the About Me card */
+body.night-mode .about-me-card {
+    background-color: #161b22;
+    border-color: #30363d;
+    color: #c9d1d9;
+  }
+  
+  /* Night mode styles for the About Me card links */
+  body.night-mode .about-me-card a {
+    color: #58a6ff;
+  }
+  
+  body.night-mode .about-me-card a:hover {
+    color: #c9d1d9;
+    text-decoration: underline;
+  }
+  
