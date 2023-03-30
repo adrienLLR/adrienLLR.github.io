@@ -184,7 +184,11 @@
   }
 
   .project .firefighter {
+    width:600px;
+    height:95%;
+  }
 
+  .project .projet-os {
     width:600px;
     height:95%;
   }
@@ -206,6 +210,50 @@
   .project a:hover {
     text-decoration: underline;
   }
+
+
+
+.project-section {
+  display: none;
+}
+
+.project-section.active {
+  display: block;
+}
+
+#project-navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+#project-navigation button {
+  background-color: transparent;
+  border: 1px solid #d1d5da;
+  border-radius: 6px;
+  color: #24292e;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0 8px;
+  padding: 4px 8px;
+}
+
+#project-navigation button:hover {
+  background-color: #f6f8fa;
+}
+
+body.night-mode #project-navigation button {
+  color: #c9d1d9;
+  border-color: #30363d;
+}
+
+body.night-mode #project-navigation button:hover {
+  background-color: #30363d;
+}
+
+
+
+
 
 .slide-in {
     opacity: 0;

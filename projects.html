@@ -20,62 +20,96 @@
     <section id="projects">
       <h2>A sneak peek of my projects</h2>
 
-      <div class="project">
-        <h3>Sub-language of Java Compiler</h3>
-        <!-- <img src="sneakpeek1.png" width="400" height="500" alt="No images available because of policy"> -->
-        <p> Homemade compiler for a homemade language called Deca which is a sub language of Java.
-            The compiler is coded in Java and the assembly language is that of a homemade abstract machine
-            called Ima. Use of ANTLR to do the lexical and syntactic analysis and to help build
-            the abstract tree. <br>
-            It was a group project, I focused on the tree decoration, helped on the assembly language generation
-            and I conducted the extension part which was to implement a linker to be able to generate and link 
-            object files.
-        </p>
-        <a href="">No sources available because of university policy for this project</a>
+      <nav id="project-navigation">
+        <button id="ai-projects-btn" class="active">AI Projects</button>
+        <button id="software-projects-btn">Software / Hardware Projects</button>
+      </nav>
+      
+
+      <div id="software-projects" class="project-section">
+
+        <div class="project">
+          <h3>Sub-language of Java Compiler</h3>
+          <p> Homemade compiler for a homemade language called Deca which is a sub language of Java.
+              The compiler is coded in Java and the assembly language is that of a homemade abstract machine
+              called Ima. Use of ANTLR to do the lexical and syntactic analysis and to help build
+              the abstract tree. <br>
+              It was a group project, I focused on the tree decoration, helped on the assembly language generation
+              and I conducted the extension part which was to implement a linker to be able to generate and link 
+              object files.
+          </p>
+          <a href="">No sources available because of university policy for this project</a>
+        </div>
+
+        <div class="project">
+          <h3>Graphic interface library</h3>
+          <div class="image-container">
+              <img class="project-image" src="img/minesweeper.gif"  alt="Project Image">
+              <img class="project-image" src="img/widgets.gif" height="300" alt="Project Image">
+          </div>
+          <p>A graphical user interface library coded in C that allows a user to create their own graphical window using different widgets such as frames, buttons, toplevel, etc. Each widget can be bound to a callback function that can perform various types of applications. This library was developed in a modular way to allow for the addition of other widgets.</p>
+          <a href="https://github.com/adrienLLR/Interface-Graphique">View on GitHub</a>
+        </div>
+
+        <div class="project">
+          <h3>Processor Conception</h3>
+          <div class="image-container">
+              <img class="project-image" src="img/processor-project.png" alt="Project Image">
+              <img class="proc-image" src="img/schema-processor.png" alt="Project Image">
+          </div>
+          <p> Conception of a simplified version of the Risc-V processor in VHDL with Vivado for testing. <br>
+              Implementation of the decoding and the behavior of the main instructions : add, immediate load, shift, 
+              jump, comparison and handling of interruptions.
+          </p>
+          <a href="">View on GitHub ( Upcoming )</a>
+        </div>
+
+        <div class="project">
+          <h3>FireFighter Robots - Simulation</h3>
+          <div class="image-container">
+              <img class="firefighter" src="img/firefighter.gif" alt="Project Image">
+          </div>
+          <p> A program coded in Java that simulates different fire extinction strategies to see which one is the best. The simulations are performed on different maps and various terrains. The terrains affects the movements of the robots and their capacity of refill.</p>
+          <a href="https://github.com/adrienLLR/Robot-Pompier">View on GitHub</a>
+        </div>
+
+        <div class="project">
+          <h3>Operating System Conception</h3>
+          <div class="image-container">
+              <img class="projet-os" src="img/projet-os.gif" alt="Project Image">
+          </div>
+          <p>Making of an operating system, targeted for qemu emulator, with staple features : screen and time handling, 
+            interruptions, scheduler, context switch, ending and creation of processes.
+          </p>
+          <a href="https://github.com/adrienLLR/projet-OS">View on GitHub</a>
+        </div>
+
       </div>
 
-      <div class="project">
-        <h3>Graphic interface library</h3>
-        <div class="image-container">
-            <img class="project-image" src="img/minesweeper.gif"  alt="Project Image">
-            <img class="project-image" src="img/widgets.gif" height="300" alt="Project Image">
-        </div>
-        <p>A graphical user interface library coded in C that allows a user to create their own graphical window using different widgets such as frames, buttons, toplevel, etc. Each widget can be bound to a callback function that can perform various types of applications. This library was developed in a modular way to allow for the addition of other widgets.</p>
-        <a href="https://github.com/adrienLLR/Interface-Graphique">View on GitHub</a>
-      </div>
 
-      <div class="project">
-        <h3>Processor Conception</h3>
-        <div class="image-container">
-            <img class="project-image" src="img/processor-project.png" alt="Project Image">
-            <img class="proc-image" src="img/schema-processor.png" alt="Project Image">
-        </div>
-        <p> Conception of a simplified version of the Risc-V processor in VHDL with Vivado for testing. <br>
-            Implementation of the decoding and the behavior of the main instructions : add, immediate load, shift, 
-            jump, comparison and handling of interruptions.
-        </p>
-        <a href="">View on GitHub ( Upcoming )</a>
-      </div>
+      <div id="ai-projects" class="project-section">
 
-      <div class="project">
-        <h3>FireFighter Robots - Simulation</h3>
-        <div class="image-container">
-            <img class="firefighter" src="img/firefighter.gif" alt="Project Image">
+        <div class="ai-project project">
+          <h3>AI Agent for a self-made game</h3>
+          
+          <p>A little game was made on python with the library pygame. The goal is to make
+            an AI agent that is capable to beat the game and to beat it perfectly.
+          </p>
+          <a href="">Still on work</a>
         </div>
-        <p> A program coded in Java that simulates different fire extinction strategies to see which one is the best. The simulations are performed on different maps and various terrains. The terrains affects the movements of the robots and their capacity of refill.</p>
-        <a href="https://github.com/adrienLLR/Robot-Pompier">View on GitHub</a>
-      </div>
+      
+        <div class="ai-project project">
+          <h3>AI for blobwar game</h3>
 
-      <div class="project">
-        <h3>Operating System Conception</h3>
-        <div class="image-container">
-            <img class="projet-os" src="" alt="Project Image">
+          <p>Making of an artificial intelligence capable of playing blobwar thanks to 
+            min-max algorithm, alpha-beta pruning, iterative deepening along with other
+            optimizations. Without iterative deepening, the AI can play 8 moves ahead in a
+            reasonable amount of time.
+          </p>
+          <a href="">View on GitHub ( upcoming )</a>
         </div>
-        <p>Making of an operating system, targeted for qemu emulator, with staple features : screen and time handling, 
-          interruptions, scheduler, context switch, ending and creation of processes.
-        </p>
-        <a href="https://github.com/adrienLLR/projet-OS">View on GitHub</a>
       </div>
+      
       
     </section>
     
