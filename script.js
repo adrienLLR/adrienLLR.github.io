@@ -37,8 +37,8 @@ function filterProjects(projectType) {
 
 document.addEventListener('DOMContentLoaded', () => {
   setNightModeState();
-  // filterProjects('ai'); // Uncomment this to toggle AI section at loading
-  filterProjects('software'); 
+  filterProjects('ai'); // Uncomment this to toggle AI section at loading
+  //filterProjects('software'); 
 
   const projects = document.querySelectorAll('.project');
   const observerOptions = {

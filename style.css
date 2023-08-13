@@ -156,7 +156,18 @@
   }
 
   .project * {
-    text-align: center; /* Center the text of all child elements */
+   text-align: center; /* Center the text of all child elements */
+  } 
+
+  .project p {
+    padding-left: 16px; 
+    padding-right: 16px;
+    padding-bottom: 8px;
+  }
+
+  .github-link {
+    text-align: center;
+    padding-bottom: 8px; /* Adjust padding as desired */
   }
   
   .image-container {
@@ -185,6 +196,11 @@
 
   .project .firefighter {
     width:600px;
+    height:95%;
+  }
+
+  .project .blobwar {
+    width: 550px;;
     height:95%;
   }
 
